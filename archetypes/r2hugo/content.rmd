@@ -1,0 +1,6 @@
+---
+output:
+  md_document:
+    variant: commonmark
+---
+
