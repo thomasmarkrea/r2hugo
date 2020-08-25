@@ -7,4 +7,4 @@ date = {{ .Date }}
 draft = true
 +++
 
-{{% include "post/{{ .Name }}/content.md" %}}
+{{% include "posts/{{ .Name }}/content.md" %}}
