@@ -63,7 +63,7 @@ date = 2020-01-01T13:00:00+00:00
 draft = true
 +++
 
-{{% include "posts/test-r2hugo-post/content.md" %}}
+{{% include "{{ .File.Dir }}content.md" %}}
 ```
 
 `content.rmd` is where the actual content goes
@@ -97,7 +97,3 @@ To test the page, *knit* `content.rmd` and run
 ```
 hugo server -D
 ```
-
-> **Note:** If you create content in a directory other than `posts/` you will need to manually update the path in the `include` shortcode.
->
-> This will be fixed in a future version once this issue is resolved [https://github.com/gohugoio/hugo/issues/7589](https://github.com/gohugoio/hugo/issues/7589)
